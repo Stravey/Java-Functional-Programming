@@ -6,10 +6,10 @@ import java.util.logging.Logger;
 
 public class Sample3 {
 
-    static Logger logger = init(Level.DEBUG);
+    //static Logger logger = init(Level.DEBUG);
 
     public static void main(String[] args) {
-        logger.debug("{}",expensive());
+       //logger.debug("{}",expensive());
     }
 
     static String expensive() {
@@ -17,7 +17,7 @@ public class Sample3 {
         return "日志";
     }
 
-    static <AppenderComponentBuilder, BuiltConfiguration> Logger init(Level level) {
+/*    static <AppenderComponentBuilder, BuiltConfiguration> Logger init(Level level) {
         ConfigurationBuilder <BuiltConfiguration> builder = ConfigurationBuilderFactory.newConfigurationBuilder()
                 .setStatusLevel(Level.ERROR)
                 .setConfigurationName("BuilderTest");
@@ -29,6 +29,6 @@ public class Sample3 {
                 .add(bulider.newRootLogger(level).add(bulider.newAppenderRef("Stout")));
         Configurator.initialize(bulider.build());
         return LogManager.getLogger();
-    }
+    }*/
 
 }
