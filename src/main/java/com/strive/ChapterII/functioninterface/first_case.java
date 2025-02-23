@@ -78,15 +78,15 @@ public class first_case {
         int third(int a,int b,int c);
     }
 
+    //泛型 提高代码的简洁性和复用性
     @FunctionalInterface
     interface fourth_Type<T> {
         T ha();
     }
-
+    //泛型
     @FunctionalInterface
     interface fifth_Type<O,I> {
         O he(I input);
     }
-
 
 }
