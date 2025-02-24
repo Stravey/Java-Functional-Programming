@@ -9,6 +9,7 @@ import java.util.function.Predicate;
 import java.util.function.Supplier;
 
 // 函数接口练习
+// 使用jdk的函数接口实现Lambda表达式
 public class practice {
 
     public static void main(String[] args) {
@@ -33,7 +34,6 @@ public class practice {
             }
         }
         return result;
-
         /*
             (Integer number) -> (number & 1) == 0
          */
@@ -42,6 +42,7 @@ public class practice {
     static List<String> map(List<Integer> list, Function<Integer,String> function) {
         List<String> result = new ArrayList<>();
         for (Integer number : list){
+            //使用字符串进行输出
             result.add(function.apply(number));
         }
         return result;
@@ -52,6 +53,7 @@ public class practice {
 
     static void consume(List<Integer> list, Consumer<Integer> consumer) {
         for(Integer number : list) {
+            //使用系统输出数字
             consumer.accept(number);
         }
         /*
