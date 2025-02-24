@@ -52,13 +52,13 @@ public class first_case {
     public static void main(String[] args) {
         first_Type obj1 = (int a) -> (a & 1) == 0;
         first_Type obj2 = (int a) -> BigInteger.valueOf(a).isProbablePrime(100);
-        second_Type obj3 = (int a,int b) -> a - b;
-        second_Type obj4 = (int a,int b) -> a * b;
-        third_Type obj5 = (int a,int b,int c) -> a + b - c;
+        second_Type obj3 = (int a, int b) -> a - b;
+        second_Type obj4 = (int a, int b) -> a * b;
+        IntTernaryOperator obj5 = (int a, int b, int c) -> a + b - c;
         fourth_Type<Student> onj6 = () -> new Student();
         fourth_Type<List<Student>> obj7 = () -> new ArrayList<Student>();
-        fifth_Type<Integer,Student> obj8 = (Student s) -> s.getAge();
-        fifth_Type<String,Student> obj9 = (Student s) -> s.getName();
+        fifth_Type<Integer, Student> obj8 = (Student s) -> s.getAge();
+        fifth_Type<String, Student> obj9 = (Student s) -> s.getName();
 
     }
 
@@ -70,12 +70,12 @@ public class first_case {
 
     @FunctionalInterface
     interface second_Type {
-        int second(int a,int b);
+        int second(int a, int b);
     }
 
     @FunctionalInterface
-    interface third_Type {
-        int third(int a,int b,int c);
+    interface IntTernaryOperator {
+        int third(int a, int b, int c);
     }
 
     //泛型 提高代码的简洁性和复用性
@@ -83,9 +83,10 @@ public class first_case {
     interface fourth_Type<T> {
         T ha();
     }
+
     //泛型
     @FunctionalInterface
-    interface fifth_Type<O,I> {
+    interface fifth_Type<O, I> {
         O he(I input);
     }
 
