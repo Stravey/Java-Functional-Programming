@@ -8,6 +8,7 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 
+// 函数接口练习
 public class practice {
 
     public static void main(String[] args) {
