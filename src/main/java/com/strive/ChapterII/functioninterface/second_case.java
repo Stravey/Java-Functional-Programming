@@ -59,7 +59,7 @@ public class second_case {
         //IntBinaryOperator接口
         IntBinaryOperator obj3 = (int a, int b) -> a - b;
         IntBinaryOperator obj4 = (int a, int b) -> a * b;
-        obj5 = (int a, int b, int c) -> a + b - c;
+        // obj5 = (int a, int b, int c) -> a + b - c;
         //Supplier接口
         Supplier<Teacher> onj6 = () -> new Teacher();
         Supplier<List<Teacher>> obj7 = () -> new ArrayList<Teacher>();
