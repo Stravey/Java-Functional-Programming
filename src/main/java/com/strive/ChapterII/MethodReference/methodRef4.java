@@ -1,4 +1,4 @@
-package com.strive.ChapterII.methodreference;
+package com.strive.ChapterII.MethodReference;
 
 import java.util.function.BiFunction;
 import java.util.function.Function;

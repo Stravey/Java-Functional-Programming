@@ -1,16 +1,15 @@
-package com.strive.ChapterII.methodreference;
+package com.strive.ChapterII.MethodReference;
 
 import java.util.stream.Stream;
 
-//第一种方法引用形式：类名::静态方法
-public class methodRef1 {
+//第二种方法引用形式：类名::非静态方法
+public class methodRef2 {
     public static void main(String[] args) {
-        Stream.of(
-                new Student("111","男"),
-                new Student("222","男"),
-                new Student("333","女")
-                //filter方法为非静态方法的方法引用（学生即对象类中的方法）
-        ).filter(Student::isMale)
+        Stream.of(      new Student("111","男"),
+                        new Student("222","男"),
+                        new Student("333","女")
+                        //filter方法为非静态方法的方法引用（学生即对象类中的方法）
+                ).filter(Student::isMale)
                 //下面这种为静态方法的方法引用（类中的静态方法）
                 //.filter(methodRef1::isMale)
 
@@ -21,7 +20,7 @@ public class methodRef1 {
                 //.方法引用
                 //下面这种为静态方法的方法引用（类中的静态方法）
                 //.forEach(methodRef1::abc);
-                //abc方法为非静态方法的方法引用（学生即对象类中的方法
+                //abc方法为非静态方法的方法引用（学生即对象类中的方法）
                 .forEach(Student::abc);
 
         /*
@@ -29,15 +28,6 @@ public class methodRef1 {
             (Student stu) -> stu.sex().equals("男")
          */
     }
-
-    public static boolean isMale(Student s) {
-        return s.sex().equals("男");
-    }
-
-    public static void abc(Student s) {
-        System.out.println(s);
-    }
-
     //record类用来创建不可变的对象
     record Student(String Name, String sex) {
         public boolean isMale() {
@@ -55,5 +45,4 @@ public class methodRef1 {
             (stu) -> stu.abc()
          */
     }
-
 }

@@ -1,4 +1,4 @@
-package com.strive.ChapterII.functioninterface;
+package com.strive.ChapterII.FunctionInterface;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
