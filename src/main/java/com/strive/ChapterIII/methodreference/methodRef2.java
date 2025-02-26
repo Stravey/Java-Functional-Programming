@@ -28,8 +28,6 @@ public class methodRef2 {
             (Student stu) -> stu.sex().equals("男")
          */
     }
-
-
     //record类用来创建不可变的对象
     record Student(String Name, String sex) {
         public boolean isMale() {
