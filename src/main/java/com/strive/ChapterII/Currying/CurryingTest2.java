@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CurryingTest2 {
-
     public static void main(String[] args) {
         step3(step2(step1()));
     }
@@ -53,5 +52,4 @@ public class CurryingTest2 {
         List<Integer> result = fc.op(z);
         System.out.println(result);
     }
-
 }
