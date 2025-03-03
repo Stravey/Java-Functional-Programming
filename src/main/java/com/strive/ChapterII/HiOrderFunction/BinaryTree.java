@@ -17,11 +17,20 @@ public class BinaryTree {
                         )
         );
 
+        //非递归遍历
         traversal(root,Type.PRE,System.out::print);
         System.out.println();
         traversal(root,Type.In,System.out::print);
         System.out.println();
         traversal(root,Type.POST,System.out::print);
+        System.out.println();
+
+        //递归遍历
+        new_traversal(root,Type.PRE,System.out::print);
+        System.out.println();
+        new_traversal(root,Type.In,System.out::print);
+        System.out.println();
+        new_traversal(root,Type.POST,System.out::print);
         System.out.println();
     }
 
@@ -34,6 +43,26 @@ public class BinaryTree {
 
     enum Type {
         PRE, In, POST
+    }
+
+    public static void new_traversal(TreeNode root,Type type,Consumer<TreeNode> consumer) {
+        if(root == null) {
+            return;
+        }
+        //前序遍历处理值
+        if(type == Type.PRE) {
+            consumer.accept(root);
+        }
+        traversal(root.left,type,consumer);
+        //中序遍历处理值
+        if(type == Type.In) {
+            consumer.accept(root);
+        }
+        traversal(root.right,type,consumer);
+        //后序遍历处理值
+        if(type == Type.POST) {
+            consumer.accept(root);
+        }
     }
 
     //二叉树中序遍历
