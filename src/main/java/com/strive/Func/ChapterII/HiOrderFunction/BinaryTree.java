@@ -1,4 +1,4 @@
-package com.strive.ChapterII.HiOrderFunction;
+package com.strive.Func.ChapterII.HiOrderFunction;
 
 import java.util.LinkedList;
 import java.util.function.Consumer;

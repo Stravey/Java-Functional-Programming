@@ -1,4 +1,6 @@
-package com.strive.ChapterII.MethodReference;
+package com.strive.Func.ChapterII.MethodReference;
+
+import com.strive.Func.ChapterII.MethodReference.methodRef5;
 
 import java.io.File;
 import java.util.function.Function;

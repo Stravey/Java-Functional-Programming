@@ -1,4 +1,4 @@
-package com.strive.ChapterII.HiOrderFunction;
+package com.strive.Func.ChapterII.HiOrderFunction;
 
 import java.util.Collection;
 import java.util.List;
@@ -11,20 +11,19 @@ public class SimpleStream<T> {
 
         SimpleStream.of(list)
                 .filter(x -> (x & 1) == 1)
-                .map(x -> x * x)
-                .forEach(System.out::println);
+                .map(x -> x * x);
     }
 
     public SimpleStream<T> filter(Predicate<T> predicate) {
-
+        return this;
     }
 
     public SimpleStream<T> map(Function<? super T, ? extends T> mapper) {
-
+        return this;
     }
 
     public SimpleStream<T> forEach(Function<? super T, ? extends List<? extends T>> mapper) {
-
+        return this;
     }
 
     public static <T> SimpleStream<T> of(Collection<T> collection) {

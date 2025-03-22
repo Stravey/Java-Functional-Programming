@@ -1,4 +1,4 @@
-package com.strive.ChapterI;
+package com.strive.Func.ChapterI;
 
 import java.util.ArrayList;
 import java.util.List;

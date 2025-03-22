@@ -1,4 +1,4 @@
-package com.strive.ChapterII.Currying;
+package com.strive.Func.ChapterII.Currying;
 
 public class CurryingTest1 {
     @FunctionalInterface

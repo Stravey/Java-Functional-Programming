@@ -1,4 +1,4 @@
-package com.strive.ChapterII.Closure;
+package com.strive.Func.ChapterII.Closure;
 
 //闭包
 //可以使用静态变量 成员变量 方法参数变量  不能使用非静态变量

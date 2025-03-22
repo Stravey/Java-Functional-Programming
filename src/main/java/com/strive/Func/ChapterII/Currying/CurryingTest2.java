@@ -1,4 +1,4 @@
-package com.strive.ChapterII.Currying;
+package com.strive.Func.ChapterII.Currying;
 
 import java.util.ArrayList;
 import java.util.List;

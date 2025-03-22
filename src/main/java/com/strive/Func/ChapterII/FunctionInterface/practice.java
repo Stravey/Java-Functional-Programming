@@ -1,4 +1,4 @@
-package com.strive.ChapterII.FunctionInterface;
+package com.strive.Func.ChapterII.FunctionInterface;
 
 import java.util.ArrayList;
 import java.util.List;

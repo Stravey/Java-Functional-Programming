@@ -1,4 +1,4 @@
-package com.strive.ChapterII.Closure;
+package com.strive.Func.ChapterII.Closure;
 
 import java.io.IOException;
 import java.util.ArrayList;

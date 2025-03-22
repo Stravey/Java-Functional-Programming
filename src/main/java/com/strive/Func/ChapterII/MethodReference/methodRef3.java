@@ -1,4 +1,4 @@
-package com.strive.ChapterII.MethodReference;
+package com.strive.Func.ChapterII.MethodReference;
 
 import java.util.stream.Stream;
 

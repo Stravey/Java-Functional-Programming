@@ -1,4 +1,4 @@
-package com.strive.ChapterI;
+package com.strive.Func.ChapterI;
 
 public class Sample1 {
 
