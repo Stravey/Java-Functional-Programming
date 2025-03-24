@@ -1,6 +1,7 @@
 package com.strive.Inetbc.Inet;
 
 import java.io.IOException;
+import java.net.DatagramPacket;
 import java.net.InetAddress;
 
 public class Test {
@@ -13,10 +14,16 @@ public class Test {
         System.out.println(inetAddress.getHostAddress());
 
 
-        InetAddress ia = InetAddress.getByName("www.baidu.com");
+        InetAddress nameA = InetAddress.getByName("www.baidu.com");
         //根据目标主机域名ip地址：110.242.70.57
-        System.out.println(ia.getHostAddress());
+        System.out.println(nameA.getHostAddress());
+
+        InetAddress nameB = InetAddress.getByName("www.mi.com");
+        //根据目标主机域名ip地址：139.170.157.10
+        System.out.println(nameB.getHostAddress());
 
         System.out.println(inetAddress.isReachable(3000));
+
+
     }
 }
