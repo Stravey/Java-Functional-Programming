@@ -19,14 +19,14 @@ public class Receiver {
         //定义一个DatagramPacket对象
         DatagramPacket dp = new DatagramPacket(buf, buf.length);
 
-        System.out.println("接收端：等待接收数据。。。");
+        System.out.println("接收端：等待接收数据...");
 
         // 调用DatagramSocket类的receive方法来接收数据
         ds.receive(dp);
-        System.out.println("接收端：数据接收完毕。。。");
+        System.out.println("接收端：数据接收完毕...");
 
         String data = new String(dp.getData(), 0, dp.getLength());
-        System.out.println("接收数据内容" + data);
+        System.out.println("接收数据内容" + " " + data);
         String server = dp.getAddress().getHostAddress() + ":" + ds.getPort();
         System.out.println(server);
 
