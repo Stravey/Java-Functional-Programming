@@ -27,8 +27,10 @@ public class Receiver {
 
         String data = new String(dp.getData(), 0, dp.getLength());
         System.out.println("接收数据内容" + " " + data);
-        String server = dp.getAddress().getHostAddress() + ":" + ds.getPort();
+        String server = dp.getAddress().getHostAddress() + ":" + dp.getPort();
         System.out.println(server);
+
+        ds.close();
 
     }
 }
