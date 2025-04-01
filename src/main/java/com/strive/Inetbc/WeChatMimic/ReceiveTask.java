@@ -12,7 +12,7 @@ import java.net.SocketException;
 
 public class ReceiveTask implements Runnable {
 
-    private int receivePort;
+    private final int receivePort;
 
     public ReceiveTask(int receivePort) {
         this.receivePort = receivePort;

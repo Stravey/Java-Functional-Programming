@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class SendTask implements Runnable {
 
     // 创建一个存储端口号的变量
-    private int sendPort;
+    private final int sendPort;
 
     // 构造方法
     public SendTask(int sendPort) {
