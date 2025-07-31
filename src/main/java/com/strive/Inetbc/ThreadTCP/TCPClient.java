@@ -12,6 +12,7 @@ import java.net.Socket;
  */
 
 public class TCPClient {
+
     private static final int PORT = 8060;
 
     public void connect() throws IOException {
