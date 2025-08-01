@@ -12,7 +12,6 @@ public class Test {
         //获取本地的ip地址，字符串类型：192.168.133.1
         System.out.println(inetAddress.getHostAddress());
 
-
         InetAddress nameA = InetAddress.getByName("www.baidu.com");
         //根据目标主机域名ip地址：110.242.70.57
         System.out.println(nameA.getHostAddress());
@@ -22,7 +21,6 @@ public class Test {
         System.out.println(nameB.getHostAddress());
 
         System.out.println(inetAddress.isReachable(3000));
-
 
     }
 }
