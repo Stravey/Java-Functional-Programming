@@ -31,6 +31,5 @@ public class Receiver {
         System.out.println(server);
 
         ds.close();
-
     }
 }

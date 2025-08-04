@@ -21,6 +21,5 @@ public class Test {
         System.out.println(nameB.getHostAddress());
 
         System.out.println(inetAddress.isReachable(3000));
-
     }
 }
