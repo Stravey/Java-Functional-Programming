@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+@SuppressWarnings("all")
 public class ClosureTest2 {
     public static void main(String[] args) throws IOException {
         //创建10个任务对象，并且每一个任务对象给一个任务编号

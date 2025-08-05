@@ -32,11 +32,9 @@ public class ClosureTest1 {
 
     static class Student {
         int d;
-
         public Student(int d) {
             this.d = d;
         }
-
     }
 
     public void test(int c) {
